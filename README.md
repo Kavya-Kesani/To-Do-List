@@ -42,3 +42,7 @@ The objective of the project is to develop a fully functional, user-friendly to-
 **Reusable Code:** Writing reusable functions and components reduces redundancy and promotes cleaner code.
 
 **Accessibility:** Ensuring the application is aacessible to all users, including those with disabilities, enhances its usability.
+
+<img width="960" alt="ss_1" src="https://github.com/Kavya-Kesani/CODTECH-Task1/assets/174758012/7a77721d-d67f-40e3-8db9-6889c3516f7a">
+
+
