@@ -8,7 +8,7 @@
 
 **Duration:** June to July 2024 
 
-**Mentor:** 
+**Mentor:** Neela Santhosh Kumar
 
 ## Overview of the project 
 
