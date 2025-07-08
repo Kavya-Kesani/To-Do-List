@@ -1,91 +1,122 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
+
+body {
 	height: 100vh;
-	background: #00ddff;
-	background: linear-gradient(139deg,#03ddff 0%,#ff0381 90%);
+	background: linear-gradient(135deg, #004e64 0%, #00bfa6 100%);
+	color: #ffffff;
 }
-.container{
+
+.container {
 	position: relative;
 	max-width: 800px;
 	padding: 10px;
 	margin: 50px auto;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 12px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-.addTask{
+
+.addTask {
 	width: 100%;
 	display: flex;
 	padding: 10px 0;
 }
-.addTask > input[type="text"]{
+
+.addTask > input[type="text"] {
 	width: 90%;
-	color: #333;
-	border:none;
-	border-bottom: 2px solid #666;
+	color: #ffffff;
+	border: none;
+	border-bottom: 2px solid #ffffffaa;
 	background: none;
 	padding: 10px;
-	font-size: 22px;
+	font-size: 20px;
 	outline: none;
+	::placeholder {
+		color: #cccccc;
+	}
 }
-.addTask button{
+
+.addTask button {
 	margin: 0 10px;
-	background: #222;
+	background: #00bfa6;
 	color: #fff;
-	font-size: 18px;
+	font-size: 16px;
 	text-transform: uppercase;
-	padding: 10px;
+	padding: 10px 15px;
 	border: none;
-	outline: none;
-	border-radius: 5px;
+	border-radius: 8px;
 	cursor: pointer;
+	transition: background 0.3s ease;
 }
-.notCompleted, .Completed{
+
+.addTask button:hover {
+	background: #00d5b2;
+}
+
+.notCompleted, .Completed {
 	margin: 5px 0;
 	padding: 20px;
 }
-h3{
-	font-size: 28px;
+
+h3 {
+	font-size: 26px;
 	text-transform: uppercase;
 	text-align: center;
-	color: #031e02;
+	color: #ffffff;
+	letter-spacing: 1px;
 }
-ol{
+
+ol {
 	list-style: none;
 	counter-reset: my-counter;
 }
-ol li{
+
+ol li {
 	width: 100%;
-	padding: 18px;
-	margin: 5px 0;
-	background: #e96969bb;
-	font-size: 22px;
+	padding: 15px;
+	margin: 8px 0;
+	background: rgba(255, 255, 255, 0.15);
+	color: #ffffff;
+	font-size: 20px;
 	counter-increment: my-counter;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-ol.Completed li{
-	background: #01d10c;
+
+ol.Completed li {
+	background:  #94e0d6;
+;
+	color: #002d1a;
 }
-ol li::before{
+
+ol li::before {
 	content: counter(my-counter);
-	background: #231381;
+	background: #00796b;
 	width: 2rem;
 	height: 2rem;
 	border-radius: 50%;
 	display: inline-block;
 	line-height: 2rem;
 	text-align: center;
-	color: #0c0101;
+	color: #ffffff;
 	margin-right: 0.5rem;
+	font-weight: bold;
 }
-li button{
+
+li button {
 	float: right;
 	padding: 5px;
-	font-size: 28px;
-	line-height: 28px;
-	margin-right: 15px;
+	font-size: 24px;
+	line-height: 24px;
+	margin-right: 10px;
 	background: none;
 	border: none;
 	outline: none;
 	cursor: pointer;
+	color: #ffffff;
 }
